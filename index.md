@@ -1,4 +1,8 @@
-# This is lab 0!
+# This is my webpage!
+
+## [About](about) </br>
+## [Lab Report 1](lab-report-1-week-0)
+
 
 CSE 15L is *so* **cool!**
 
@@ -8,3 +12,4 @@ CSE 15L is *so* **cool!**
 ## Wow A Frog!
 
 > He just canceled! Wait...
+
