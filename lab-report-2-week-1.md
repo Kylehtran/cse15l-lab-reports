@@ -12,7 +12,7 @@ Here's a screenshot of what Visual Studio looks like with the terminal:
 
 ![Visual Studio Screenshot](visualstudioscreenshot.jpg)
 
-## 2. Remotely Connecting
+## 2. Connecting to Remote Servers
 
 Now, we are going to learn how to remotely connect to the server. First, make sure you have OpenSSH is installed on your compueter. If not, you can learn to do so through this [link](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui). 
 
@@ -36,16 +36,20 @@ Afterwards, you should get this message in the terminal:
 
 That means you successfully connected to the server!
 
-## 3. Commands
+## 3. Using Commands
 
-Next, you can try out some commands. Here are a few examples
+Next, you can try out some commands in both your local computer and the remote computer. Here are a few examples
 
 1. `cd` - change directory
 2. `pwd` - print working directory
 3. `ls` - lists files in current directory
 4. `cat` - prints all files in the current directory
 
-If you try running these commands on both your local computer and the remote computer, you'll get different results. That's because when you are logged in to the remote, you are in a different computer entirely. Therefore, you won't have access to the files on your own application. So what happens if you want to access a file that is on your local computer, but not the remote computer. Well you can use `scp` to copy that file from your computer to the remote computer. 
+If you try running these commands on both your local computer and the remote computer, you'll get different results. That's because when you are logged in to the remote, you are in a different computer entirely. Therefore, you won't have access to the files on your own local computer.
+
+## 4. Copying files with SCP
+
+ So what happens if you want to access a file that is on your local computer, but not the remote computer. Well you can use `scp` to copy that file from your computer to the remote computer. 
 
 `scp <file> <username>@ieng6.ucsd.edu <path>`
 
@@ -57,5 +61,47 @@ Here is an example of `scp` in action:
 
 ![SCP!](scp.png)
 
-## 4. Setting up an SSH key
+## 5. Setting up an SSH key
+
+Entering the password everytime you want to use the remote computer is very annoying and can take a lot of time since you will use it often. A SSH key will allow you to use `ssh` and `scp` without entering a password.
+
+To do this, we will use a program called **ssh-keygen**. It produces two keys: a puiblic key and a private key. The public key is copied onto the server (the remote computer) and the private key is kept in the client (local computer).
+
+First, you type in `ssh-keygen` into the terminal. It will prompt you to type in where you want to store the keys and a passphrase, but you can just press enter for the default. This is what it should appear on your terminal.
+
+![ssh-keygen image](sshkeygen.jpg)
+
+>The overwrite line only appears if a private key already exists
+
+Now you need to copy the public key into the remote computer. Notice that there is a line that tells you where the public key has been saved. The public key is `id_rsa.pub`. 
+
+Now we need to copy this public key file to the remote computer. Recall how we copied files to the remote computer using `scp`:
+
+`scp <path where the public key file is> <username>@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+
+Now you should be able to access the remote computer without a password. It should look something like this:
+
+![Logging in without a password](loginwithoutpassword.jpg)
+
+## 6. Optimizing Remote Running
+
+There are ways you can make your remote running more pleasant. For example, instead of:
+
+1. copying a file with `scp` to the remote server
+2. logging into the remote computer with `ssh`
+3. compiling a class file from a java file with `javac`
+4. running a class with `java`
+
+You can just use one line like this instead:
+
+![Pleasant Remote Running](remoterunningplesant.png)
+
+Now, you only have to wait for one command to run rather than 4!
+
+**Much Faster!**
+
+## 7. Conclusion
+
+With that, you know the basics of accessing a remote server!
+
 
