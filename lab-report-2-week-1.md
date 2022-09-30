@@ -10,7 +10,7 @@ THe first step is to install VSCode. You can do so through this [link](https://c
 
 Here's a screenshot of what Visual Studio looks like with the terminal:
 
-![Visual Studio Screenshot](visualstudioscreenshot.jpg)
+![Visual Studio Screenshot](Images\visualstudioscreenshot.jpg)
 
 ## 2. Connecting to Remote Servers
 
@@ -32,7 +32,7 @@ Afterwards, it will prompt you to type your password. Type your password correct
 
 Afterwards, you should get this message in the terminal:
 
-![Successful Connect!](successconnectremoteserver.jpg)
+![Successful Connect!](Images\successconnectremoteserver.jpg)
 
 That means you successfully connected to the server!
 
@@ -47,7 +47,7 @@ Next, you can try out some commands in both your local computer and the remote c
 
 If you try running these commands on both your local computer and the remote computer, you'll get different results. That's because when you are logged in to the remote, you are in a different computer entirely. Therefore, you won't have access to the files on your own local computer.
 
-![Commands](commandexample.jpg)
+![Commands](Images\commandexample.jpg)
 
 ## 4. Copying files with SCP
 
@@ -61,7 +61,7 @@ With this, you now have access to the copied file on the remote computer!
 
 Here is an example of `scp` in action:
 
-![SCP!](scp.png)
+![SCP!](Images\scp.png)
 
 ## 5. Setting up an SSH key
 
@@ -71,7 +71,7 @@ To do this, we will use a program called **ssh-keygen**. It produces two keys: a
 
 First, you type in `ssh-keygen` into the terminal. It will prompt you to type in where you want to store the keys and a passphrase, but you can just press enter for the default. This is what it should appear on your terminal.
 
-![ssh-keygen image](sshkeygen.jpg)
+![ssh-keygen image](Images\sshkeygen.jpg)
 
 >The overwrite line only appears if a private key already exists
 
@@ -96,7 +96,7 @@ There are ways you can make your remote running more pleasant. For example, inst
 
 You can just use one line like this instead:
 
-![Pleasant Remote Running](remoterunningplesant.png)
+![Pleasant Remote Running](Images\remoterunningplesant.png)
 
 Now, you only have to wait for one command to run rather than 4!
 
