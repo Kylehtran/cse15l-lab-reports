@@ -47,6 +47,8 @@ Next, you can try out some commands in both your local computer and the remote c
 
 If you try running these commands on both your local computer and the remote computer, you'll get different results. That's because when you are logged in to the remote, you are in a different computer entirely. Therefore, you won't have access to the files on your own local computer.
 
+![Commands](commandexample.jpg)
+
 ## 4. Copying files with SCP
 
  So what happens if you want to access a file that is on your local computer, but not the remote computer. Well you can use `scp` to copy that file from your computer to the remote computer. 
