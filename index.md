@@ -12,5 +12,5 @@ CSE 15L is *so* **cool!**
 
 
 
-> He just canceled! Wait...
+> He just canceled! Wait... 
 
