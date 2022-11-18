@@ -6,6 +6,7 @@
 [Lab Report 3 Week 3](lab-report-3-week-3) &nbsp;&nbsp;
 [Lab Report 4 Week 5](lab-report-4-week-5) &nbsp;&nbsp;
 [Lab Report 5 Week 7](lab-report-5-week-7) &nbsp;&nbsp;
+[Lab Report 6 Week 8](lab-report-6-week-8) &nbsp;&nbsp;
 
 CSE 15L is *so* **cool!**
 
