@@ -4,16 +4,35 @@
 
 1. First, type vim DocSearchServer.java to be able to edit the java file.
 
+![Start](Images/week-5-1.jpg)
+
 2. Next, type the key sequence below:
 
 `/start<Enter>cebase<Esc>ncebase<Esc>ncebase<Esc>:wq`
 
 - `/start<Enter>` will search for the first instance of start tine file and jump to it
+
+![First Step](Images/week-5-2.jpg)
+
 - `ce` will delete the word 'start' and edit insert mode
+
+![Second Step](Images/week-5-3.jpg)
+
 - You type `base` since you are already in insert mode
+
+![Third Step](Images/week-5-4.jpg)
+
 - `<Esc>` to exit insert mode
+
 - `n` to jump to the next instance of what you last searched for. In this case, it will jump to the next instance of 'start'
+
+![Fourth Step](Images/week-5-5.jpg)
+
 - Then you retype `cebase<Esc>` to replace 'start' with 'base'. You repeat this process until you replace all the 'start' with 'base' in getFiles(). Since there is only one more 'start' in getFiles(), you do `cebase<Esc>` one more time
+
+![Fifth Step](Images/week-5-6.jpg)
+
+![Sixth Step](Images/week-5-7.jpg)
 
 3. Now, the 'start' parameter in getFiles() have been changed to 'base'
 
